@@ -1,4 +1,4 @@
-# -KVIRIN_Email_Secure_Analiser
+# KVIRIN Email Secure Analiser
 
 Kvirin Behavior Analyzer
 
@@ -22,6 +22,7 @@ Kvirin Behavior Analyzer
 
 Модули проверки в папке Parser:
 - Virus_total - Проверка хэшей файлов на заражение
-- Parser_pwned_passwd - проверяем учетные записи на наличие в скомпрометированных БД.
-- Cisco Talos  - для проверки репутации почтовых адресов и ip-адресов.
+- Parser_pwned_passwd - проверяем учетные записи на наличие в скомпрометированных БД
+- Cisco Talos  - для проверки репутации почтовых и ip-адресов
  
+ Модули необходимы для интеграции с Kvirin Email Secure Analiser.
