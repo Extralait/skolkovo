@@ -4,4 +4,4 @@ Virus_total - Проверка хэшей файлов на заражение
 
 parser_pwned_passwd - проверяем учетные записи  на взломанные пароли  (в БД скомпрометированных паролей).
 
-Ciscotalos   наборы правил Snort.org, ClamAV и SpamCop, а кроме того, множество open-source-средств анализа.
+Ciscotalos  -  проверки репутации почтовых адресов и ip-адресов, наборы правил Snort.org, ClamAV, SpamCop, и + open-source-средства анализа.
