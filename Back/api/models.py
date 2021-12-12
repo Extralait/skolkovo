@@ -81,6 +81,7 @@ class EmailMessage(models.Model):
     content_type = models.CharField('Content type', max_length=100)
     x_uid = models.CharField('X-UID', max_length=200)
     body = models.TextField('Body')
+    subject = models.TextField('Subject', default='')
     created_at = models.DateTimeField(auto_now_add=True)
 
     status = models.CharField(

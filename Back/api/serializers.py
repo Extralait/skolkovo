@@ -42,6 +42,7 @@ class EmailMessageCreateSerializer(serializers.ModelSerializer):
             email_message.content_type,
             email_message.x_uid,
             email_message.body,
+            email_message.subject,
         )
         email_message.status = 'malevolent' if status else 'safe'
         email_message.accuracy = accuracy

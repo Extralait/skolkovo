@@ -47,6 +47,7 @@ ENV APP_HOME=/home/app/web
 RUN mkdir $APP_HOME
 RUN mkdir $APP_HOME/static
 RUN mkdir $APP_HOME/media
+RUN mkdir /home/app/nltk_data
 
 WORKDIR $APP_HOME
 
@@ -65,6 +66,7 @@ COPY . $APP_HOME
 RUN chown -R app:app $APP_HOME
 RUN chown -R app:app /var/log/
 RUN chown -R app:app /var/run/
+RUN chown -R app:app /home/app/nltk_data
 
 EXPOSE 3000
 

@@ -154,6 +154,13 @@
                       </div>
                       <div class="col-12">
                         <div class="form-group">
+                          <label for="exampleFormControlTextarea2">Subject</label>
+                          <textarea class="form-control" v-model="form.subject" id="exampleFormControlTextarea2" rows="3"
+                                    placeholder="Содержимое письма"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
                           <label for="exampleFormControlTextarea1">Body</label>
                           <textarea class="form-control" v-model="form.body" id="exampleFormControlTextarea1" rows="3"
                                     placeholder="Содержимое письма"></textarea>
@@ -206,7 +213,7 @@
                       class="badge badge-pill  mr-1">{{ email.status === 'malevolent' ? 'Вредоносный' : 'Безопасный' }}</span>
                   </td>
                   <td>
-                    {{ email.accuracy }}%
+                    {{ email.accuracy*100 }}%
                   </td>
                   <td>
                     <span class="font-weight-bold">{{ email.x_uid }}</span>
@@ -243,7 +250,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['createMessage','clearMessages']),
+    ...mapActions(['createMessage','clearMessages','setEmailMessages']),
     clear: function () {
       this.form = {
         from_email: "",
@@ -251,7 +258,8 @@ export default {
         date: "",
         content_type: "",
         x_uid: "",
-        body: ""
+        body: "",
+        subject: ""
       }
     }
   },
@@ -263,6 +271,8 @@ export default {
     is_auth(newVal, oldVal) {
       if (!newVal) {
         this.clearMessages()
+      } else {
+        this.setEmailMessages('?ordering=-created_at')
       }
     }
   }
