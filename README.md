@@ -36,3 +36,6 @@ Kvirin Behavior Analyzer
 - npm run build
 - Lints and fixes files
 - npm run lint
+
+
+result.csv  - Результат проверенный кейсодержателем - Accuracy score 0.91, на нашей локальной проверке Accuracy score ~0.93.
