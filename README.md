@@ -39,3 +39,5 @@ Kvirin Behavior Analyzer
 
 
 result.csv  - Результат проверенный кейсодержателем - Accuracy score 0.91, на нашей локальной проверке Accuracy score ~0.93.
+- startup_feat_pred.ipynb  создает Фичи
+- startup_model.ipynb - Обучается модель
