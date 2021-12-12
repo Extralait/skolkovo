@@ -26,3 +26,18 @@ Kvirin Behavior Analyzer
 - Cisco Talos  - для проверки репутации почтовых и ip-адресов
  
  Модули необходимы для интеграции с Kvirin Email Secure Analiser.
+
+Папка Front (для запуска проекта):
+
+- npm install
+- Compiles and hot-reloads for development
+- npm run serve
+- Compiles and minifies for production
+- npm run build
+- Lints and fixes files
+- npm run lint
+
+
+result.csv  - Результат проверенный кейсодержателем - Accuracy score 0.91, на нашей локальной проверке Accuracy score ~0.93.
+- startup_feat_pred.ipynb  создает Фичи
+- startup_model.ipynb - Обучается модель
